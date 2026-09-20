@@ -1,0 +1,83 @@
+{
+  "type": "object",
+  "properties": {
+    "doctor": {
+      "type": "string"
+    },
+    "date": {
+      "type": "string"
+    },
+    "sourceText": {
+      "type": "string"
+    },
+    "medicines": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "strength": {
+            "type": "string"
+          },
+          "dose": {
+            "type": "string"
+          },
+          "route": {
+            "type": "string"
+          },
+          "frequency": {
+            "type": "string"
+          },
+          "duration": {
+            "type": "string"
+          },
+          "food": {
+            "type": "string"
+          },
+          "source": {
+            "type": "string"
+          },
+          "times": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "questions": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "name",
+          "strength",
+          "dose",
+          "route",
+          "frequency",
+          "duration",
+          "food",
+          "source",
+          "times",
+          "questions"
+        ]
+      }
+    },
+    "questions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "doctor",
+    "date",
+    "sourceText",
+    "medicines",
+    "questions"
+  ]
+}
